@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon+Milk&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Montserrat', 'Trebuchet MS';
+    scroll-behavior: smooth;
+  }
+
+  header.smaller {
+    height: 50px;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+}
+
+header img {
+    height: 100px;
+    width: 200px;
+    margin-left: -50px;
+}
+
+
+header img:hover{
+    cursor: pointer;
+}
+
+header ul {
+    display: inline-flex;
+    position: absolute;
+    right: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.buy-blue {
+    background-color: cyan;
+    color: white;
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    right: -120px;
+    font-size: large;
+}
+
+.warenkorb-icon {
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 91px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+i.fa-cart-shopping {
+    font-size: 25px;
+}
+
+.redcircle {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    top: -20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    padding: 10px;
+}
+
+.redcircle p {
+    background: none;
+    color: white;
+    font-size: large;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+section {
+    background-color: black;
+    padding: 5rem;
+}
+
+  
+  h1{
+    font-size: 4rem;
+    font-family: 'Lemon Milk', 'Trebuchet MS';
+    font-weight: bold;
+    color: rgb(0, 254, 224);
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-family: 'Lemon Milk', 'Trebuchet MS';
+    font-weight: bold;
+    color: rgb(0, 254, 224);
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+  
+  .cols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    flex-direction: column;
+  }
+  
+  .col{
+    width: calc(60% - 2rem);
+    margin: 1rem;
+    margin-bottom: 10rem;
+    cursor: pointer;
+  }
+
+  .right {
+    margin-left: 530px;
+  }
+
+  
+  .container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+  }
+
+  .rooom {
+    background-image: url("./assets/images/Sponsoren/CW_rooom.png");
+  }
+
+  .relyon {
+    background-image: url("./assets/images/Sponsoren/CW_relyon.png");
+  }
+
+  .nextbrand {
+    background-image: url("./assets/images/Sponsoren/CW_nextbrand.png");
+  }
+
+  .wdt {
+    background-image: url("./assets/images/Sponsoren/CW_Werner_Dosiertechnik.png");
+  }
+  
+  .front,
+  .back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+      background-position: center;
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      text-align: center;
+      min-height: 280px;
+      height: auto;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.5rem;
+  }
+  
+  .back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  }
+
+  
+  .front:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      border-radius: 10px;
+  }
+  .container:hover .front,
+  .container:hover .back{
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .back{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  
+  .inner{
+      -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+              transform: translateY(-50%) translateZ(60px) scale(0.94);
+      top: 50%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 2rem;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      outline: 1px solid transparent;
+      -webkit-perspective: inherit;
+              perspective: inherit;
+      z-index: 2;
+  }
+  
+  .container .back{
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container .front{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container:hover .back{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+  }
+  
+  .front .inner span{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+  
+  @media screen and (max-width: 64rem){
+    .col{
+      width: calc(33.333333% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 48rem){
+    .col{
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 32rem){
+    .col{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+
+
+  footer {
+    height: 55vh;
+    background-color: black;
+    width: 100%;
+    border-top: 2px solid rgba(0, 254, 224);
+    padding-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.footer-logo img {
+    height: 150px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.footer-contact {
+    padding-left: 200px;
+    margin-top: 80px;
+    float: left;
+}
+
+.footer-contact ul li {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-contact ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact ul li a:hover {
+    color: rgb(0, 254, 224);
+}
+
+.footer-social {
+    display: flex;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.linkedin {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-linkedin {
+    font-size: 30px;
+}
+
+.linkedin:hover {
+    width: 250px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.linkedin:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.linkedin span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.linkedin:hover span {opacity: 1;}
+
+.linkedin a {
+    color: black;
+    font-weight: bold;
+}
+
+.instagram {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-instagram {
+    font-size: 30px;
+}
+
+.instagram:hover {
+    width: 290px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.instagram:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.instagram span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.instagram:hover span {opacity: 1;}
+
+.instagram a {
+    color: black;
+    font-weight: bold;
+}
+
+.youtube {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 11px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-youtube {
+    font-size: 30px;
+}
+
+.youtube:hover {
+    width: 260px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.youtube:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.youtube span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 0.5s linear 0.25s;
+}
+
+.youtube:hover span {opacity: 1;}
+
+.youtube a {
+    color: black;
+    font-weight: bold;
+}
+
+.facebook {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 13px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-facebook {
+    font-size: 30px;
+}
+
+.facebook:hover {
+    width: 280px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.facebook:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.facebook span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 0.5s linear 0.25s;
+}
+
+.facebook:hover span {opacity: 1;}
+
+.facebook a {
+    color: black;
+    font-weight: bold;
+}
+
+.footer-mid {
+    background-color: rgb(0, 254, 224);
+    width: 90%;
+    height: 2px;
+    margin-left: 70px;
+    margin-top: 10px;
+    box-shadow: rgb(0, 254, 224);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 80px;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}

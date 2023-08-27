@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coachwhisperer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Home/CW_Icon.png">
+    <link rel="stylesheet" type="text/css" href="style_Home.css">
+    <link rel="stylesheet" type="text/css" href="./style_loadingpage.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/db82ca4d11.js" crossorigin="anonymous"></script>
+    <script defer src="./app_Intro.js"></script>
+    <script defer src="./app_Hearable.js"></script>
+    <script defer src="./app_AnimatedHeadline.js"></script>
+    <script defer src="./app_CardAnime.js"></script>
+    <script defer src="./app_Kurzvideo.js"></script>
+    <script defer src="./app_LoadingPage.js"></script>
+</head>
+
+<body>
+    <div class="loading">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+              <div class="loader-line"></div>
+            </div>
+            <img src="./assets/images/Home/CW_Icon.png">
+          </div>
+        </div>
+    </div>
+    
+    <div class="Content" style="opacity: 0;">
+    <header>
+        <a href="./Home.html">
+            <img src="./assets/images/Home/CW_Home_ChristmasLogo.png" title="Coachwhisperer">
+        </a>
+        <ul>
+            <li><a href="./Home.html" class="active">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./404_Error.html">Jobs</a></li>
+            <li><a href="./404_Error.html">Blog</a></li>
+            <li><a href="./Sponsorpage.html">Sponsors</a></li>
+            <li><a href="#" class="buy-blue">Buy</a></li>
+        </ul>
+        <button type="button" class="warenkorb-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="redcircle">
+                <p id="counter">0</p>
+            </div>
+        </button>
+    </header>
+    <div class="intro">
+        <h1>Die Trainings-revolution - in 5 Komponenten</h1>
+        <video src="./assets/videos/CW_Intro_Wearable.mp4"></video>
+        <h2 class="intro-left1">Kein verzweifeltes Schreien über das Feld,<span class="lightblue"> 
+            keine unnötige Trainingsunterbrechung</span> für das gesamte Team: Unser<span class="lightblue">
+            Intercom System</span> für den Sport ermöglicht eine einwandfreie
+            akustische Wahrnehmung durch<span class="lightblue">
+            Live-Kommunikation</span>. Die<span class="lightblue">
+            individuelle Passform</span> lässt einen uneingeschränkten Bewegungsablauf
+            zu.</h2>
+        <h2 class="intro-right1">Das <span class="lightblue">Wearable</span> dient als Zwischenstopp
+            zwischen <span class="lightblue">Cobox</span> und <span
+            class="lightblue">Soundstar</span> (Soundweste) bzw. <span
+            class="lightblue">Cobox</span> und <span class="lightblue">LiveHearo</span>
+            (Hearable). Es sorgt dafür, dass das Feedback des Trainers über seine App beim
+            Spieler ankommt.</h2>
+        <h2 class="intro-left2">Unsere Kommunikationszentrale: <br><span class="lightblue">Das Wearable</span></h2>
+
+    </div>
+    <div class="sec" id="sec">
+        <h1>Communication is Key</h1>
+    </div>
+    <section class="Hearable">
+        <div class="Trainer-Connection">
+            <img src="./assets/images/Home/CW_Trainer-Connection.png" alt="Trainer-Connection">
+            <h2><span class="opacity">Trainer und Sportler sind durch unser System </span><span
+                    class="lightblue">live</span><span class="opacity"> verbunden.</span>
+                <span class="opacity">Über unsere iPad-App kann der Trainer auswählen, mit welchen Spielern oder
+                    Gruppen er </span><span class="lightblue">kommunizieren </span><span
+                    class="opacity">möchte.</span>
+            </h2>
+        </div>
+        <div class="Impulse_hearable">
+            <div class="horizontal-line1"></div>
+            <div class="photo_hearable">
+            <video class="Impulse" src="./assets/videos/CW_Hearable_Impulse_Animation.mp4" autoplay muted loop></video>
+                <img src="./assets/images/Home/CW_Hearable_Black.png" alt="hearable">
+                <div style="width: 500px;">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="text_hearable">
+                    <h3>Trainingsqualität verbessern. Störung vermeiden - individuell fördern:<span
+                        class="opacity"> Das innovative und kabellose Hearable ermöglicht eine
+                        ganz</span><span class="lightblue"> neue Dimension der individuellen
+                        Förderung</span><span class="opacity">.
+                        <br>Individuelle Kommunikation in</span><span class="lightblue">
+                        Echtzeit</span><span class="opacity"> zwischen Trainer und Spieler(n), Ganz ohne
+                        Trainingsunterbrechung.
+                        Durch das unmittelbare Feedback ist eine viel</span><span class="lightblue">
+                        bessere sportliche Entwicklung</span><span class="opacity"> möglich.</span></h3>
+                </div>
+                <div class="horizontal-line2"></div>
+            </div>
+            <div class="Heartrate">
+                <div class="text1_hearable">
+                    <h3>Live-Monitoring, wie noch nie: <span class="opacity"> Unser Hearable misst die</span><span
+                            class="lightblue"> Herzfrequenz</span><span class="opacity">,
+                        </span><span class="lightblue">Sauerstoffsättigung im Blut</span><span
+                            class="opacity"> sowie</span><span class="lightblue">
+                            Belastungszonen</span><span class="opacity"> des Athleten, ohne dessen Bewegungsablauf
+                            einzuschränken.</span></h3>
+                </div>
+                <div style="width: 500px;">
+                    <div class="vertical-line1"></div>
+                </div>
+                <div class="heartrate_hearable">
+                    <video class="heartrate" src="./assets/videos/CW_Hearable_EKG-Heartrate_Animation.mp4" autoplay muted loop></video>
+                    <div class="dark-container"></div>
+                    <img src="./assets/images/Home/CW_Hearable_lightblue.png" alt="Hearable_Türkis">
+                </div>
+                <div class="horizontal-line3"></div>
+            </div>
+            <div class="aufbau-container">
+                <div class="aufbau_hearable">
+                    <img src="./assets/images/Home/CW_Hearable_Black.png" class="black">
+                    <img src="./assets/images/Home/CW_Hearable_Camo.png" class="blue">
+                    <img src="./assets/images/Home/CW_Hearable_Red.png" class="red">
+                    <div class="left1">
+                        <h2><span class="lightblue">Personalisierbare Passstücke</span> <br>in den
+                            Vereinsfarben</h2>
+                    </div>
+                    <div class="right1">
+                        <h2><span class="lightblue">Individuelle Passform</span> für <br>maximalen Komfort
+                        </h2>
+                    </div>
+                    <div class="left2">
+                        <h2><span class="lightblue">Live-Monitoring</span> der Vitalwerte</h2>
+                    </div>
+                    <div class="right2">
+                        <h2>angenehme <span class="lightblue">Live-<br>Kommunikation</span> ohne
+                            <br>Störgeräusche</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet-show">
+                <h1>Alles im grünen Bereich</h1>
+                <div class="tablet-show_container">
+                    <div class="tablet-show_video">
+                        <video src="./assets/videos/CW_Hearable_Heartrate_Demonstration.mov" autoplay muted loop></video>
+                    </div>
+                    <div class="tablet-show_text">
+                        <h2><span class="opacity">Durch die </span><span class="lightblue">Erfassung
+                            der Belastungszonen in Echtzeit</span><span class="opacity"> kann der Trainer
+                            sichergehen, dass die Athleten im</span> optimalen Belastungsbereich liegen.</h2>
+                        <h2><span class="opacity">Der Trainer kann über unser Hearable die Athleten sofort warnen,
+                            wenn sie einen kritischen Wert überschreiten. Dadurch wird das </span><span
+                            class="lightblue">Risiko für Verletzungen und Langzeitschäden
+                            minimiert.</span></h2>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="wearable">
+        <div class="kurzvideo">
+            <h1 class="überschrift-kurzvideo">Der Trainings-Boost</h1>
+            <video class="fixate" src="./assets/videos/CW_Coach_Kurzvideo.mp4" autoplay muted loop></video>
+            <h2 class="text-kurzvideo1"><span class="lightblue">Komfortabler Fit</span> der Weste mit
+                Wearable bei schnellen und ruckartigen Bewegungen.</h2>
+            <h2 class="text-kurzvideo2">Mit dem <span class="lightblue">Intercom-System</span> von
+                Coachwhisperer werden Spielstrategien auf ein neues Level gehoben.
+                Spielzüge können in <span class="lightblue">Echtzeit kommuniziert und umgesetzt
+                werden.</span>
+            </h2>
+            <h2 class="text-kurzvideo3">Mit dem Tablet können <span class="lightblue">Anweisungen
+                gezielt</span> durch Auswahl des Spielers auf dem Tablet <span
+                class="lightblue">kommuniziert</span> werden.</h2>
+        </div>
+    </section>
+    <section class="weste">
+        <h1 class="animation-headline slide">
+            <span>Live communication for </span>
+            <span class="animation-words-wrapper">
+              <b class="is-visible">football</b>
+              <b>rugby</b>
+              <b>hockey</b>
+              <b class="head-blue">everyone</b>
+            </span>
+          </h1>
+        <div class="weste-animation">          
+            <video class="weste-anime" src="./assets/videos/CW_Weste_Animation.mp4" autoplay muted loop></video>
+        </div>
+        <div class="weste-text">
+            <h3>Im Schulterbereich der Weste befinden sich kleine Lautsprecher, <span class="opacity">welche die
+                Kommunikation des Trainers für den Spieler übertragen. Die Lautsprecher sind ganz einfach mit der
+                Weste </span><span class="lightblue">waschbar</span>. <span class="opacity">Das
+                Wearable wird in einer kleinen Rückentasche in der Weste verstaut.</span></h3>
+        </div>
+        <div class="weste-erklärung">
+            <h1>So funktioniert's</h1>
+            <img src="./assets/images/Home/CW_Tablet_Use.png">
+            <h2>Alle Spielerinformationen werden in der Cloud, basierend auf dem IoT, gespeichert. <span
+                class="opacity">So ist ein Datenaustausch in beide Richtungen problemlos möglich. Die
+                </span><span class="lightblue">erhobenen Vitaldaten</span><span class="opacity">
+                werden hier </span><span class="lightblue">analysiert.</span></h2>
+            <h1>Ein Plan für alles</h1>
+            <video src="./assets/videos/CW_Tablet_Trainingsplanung.mp4" autoplay muted loop></video>
+            <h2><span class="opacity">Mithilfe unseres Trainingskatalogs kann aus </span><span
+                class="lightblue">über 1000 Übungen</span><span class="opacity"> im Handumdrehen
+                der</span> nächste Trainingsplan zusammengestellt werden.</h2>
+        </div>
+    </section>
+    <section class="Demo">
+        <div class="containerD">
+            <div class="cardD" data-tilt data-tilt-max="2">
+                <div class="Test">
+                    <div class="circleD"></div>
+                    <img src="./assets/images/Home/CW_Koffer.PNG" alt="hearable">
+                </div>
+                <div class="infoD">
+                    <h1 class="titleD">Teste unser System</h1>
+                    <h3>Coachwhisperer vereint Live-Kommunikation, Vitaldatentracking und -analyse sowie Trainingsplanung in einer innovativen All-In-One Lösung</h3>
+                    <h3>Jederzeit jeden Spieler erreichen mit dem weltweit einzigartigen Team-Communication-Systems</h3>
+                    <h3>Mit dem Intercom-System von Coachwhisperer sprichst du direkt und in Echtzeit mit all deinen Spielern auf dem Feld</h3>
+                    <div class="Anfrage">
+                        <button onclick="window.location.href='mailto:info@coachwhisperer.net'">Test-Anfrage</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Buy">
+        <div class="container">
+            <div class="card" data-tilt data-tilt-max="5">
+                <div class="hearable">
+                    <div class="circle"></div>
+                    <img src="./assets/images/Home/CW_Hearable_Black.png" alt="hearable">
+                </div>
+                <div class="info">
+                    <h1 class="title">Hearable</h1>
+                    <h3>Live Kommunikation</h3>
+                    <h3>Live Monitoring</h3>
+                    <h3>Personalisierbar</h3>
+                    <div class="sizes">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button class="active">4</button>
+                    </div>
+                    <div class="purchase">
+                        <button onclick="addItemToCart()">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="card1" data-tilt data-tilt-max=5>
+                <div class="weste1">
+                    <div class="circle1"></div>
+                    <img src="./assets/images/Home/CW_Weste.png" alt="weste">
+                </div>
+                <div class="info1">
+                    <h1 class="title1">Weste</h1>
+                    <h3>Anpassbare Größe</h3>
+                    <h3>Flexibel</h3>
+                    <h3>Komfort</h3>
+                    <div class="sizes1">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button class="active">4</button>
+                    </div>
+                    <div class="purchase1">
+                        <button onclick="addItemToCart()">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="card2" data-tilt data-tilt-max=5>
+                <div class="wearable1">
+                    <div class="circle2"></div>
+                    <img src="./assets/images/Home/CW_Case+Tracker.PNG" alt="wearable">
+                </div>
+                <div class="info2">
+                    <h1 class="title2">Wearable</h1>
+                    <h3>Live Kommunikation</h3>
+                    <h3>Tracking</h3>
+                    <h3>Datenerfassung</h3>
+                    <div class="sizes2">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button class="active">4</button>
+                    </div>
+                    <div class="purchase2">
+                        <button onclick="addItemToCart()">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="card3" data-tilt data-tilt-max=5>
+                <div class="pullover">
+                    <div class="circle3"></div>
+                    <img src="./assets/images/Home/CW_TeildesTeams.png" alt="Pullover">
+                </div>
+                <div class="info3">
+                    <h1 class="title3">Pullover</h1>
+                    <h3>Super Fit</h3>
+                    <h3>10% mehr Motivation</h3>
+                    <h3>Coachwhisperer wear</h3>
+                    <div class="sizes3">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button class="active">4</button>
+                    </div>
+                    <div class="purchase3">
+                        <button onclick="addItemToCart()">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="leer"></div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./assets/images/Home/CW_Home_ChristmasLogo.png">
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><a href="https://goo.gl/maps/iE7dCECYCcN3QMeP7">Coachwhisperer GmbH<br>
+                            Leutragraben 2-4<br>
+                            07743 Jena</a></li>
+                    <li><a href="mailto:info@coachwhisperer.net">info@coachwhisperer.net</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="button-slide">
+                    <button type="button" class="linkedin">
+                        <a href="https://www.linkedin.com/company/coachwhisperer/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="button-slide">
+                    <button type="button" class="instagram">
+                        <a href="https://www.instagram.com/coachwhisperer/">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="button-slide">
+                    <button type="button" class="youtube">
+                        <a href="https://www.youtube.com/channel/UCVyr8tz14pzCVJNLkfjAFmw">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="button-slide">
+                    <button type="button" class="facebook">
+                        <a href="https://www.facebook.com/coachwhisperer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-mid"></div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy;2022 Coachwhisperer. All rights resered.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+        integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+        integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

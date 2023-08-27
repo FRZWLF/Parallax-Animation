@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon+Milk&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Trebuchet MS";
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+header.smaller {
+    height: 50px;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+}
+
+header img {
+    height: 100px;
+    width: 200px;
+    margin-left: -50px;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+header ul {
+    display: inline-flex;
+    position: absolute;
+    right: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.buy-blue {
+    background-color: cyan;
+    color: white;
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    right: -120px;
+    font-size: large;
+}
+
+.warenkorb-icon {
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 91px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+i.fa-cart-shopping {
+    font-size: 25px;
+}
+
+.redcircle {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    top: -20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    padding: 10px;
+}
+
+.redcircle p {
+    background: none;
+    color: white;
+    font-size: large;
+}
+
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+button:hover {
+    background: #585858;
+    color: white;
+}
+
+.timeline {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline__content-title {
+    font-weight: normal;
+    font-size: 80px;
+    margin: -10px 0 0 0;
+    transition: 0.4s;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    color: #fff;
+}
+
+.timeline__content-desc {
+    margin: 0;
+    font-size: 25px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Montserrat", "Trebuchet MS";
+    font-weight: normal;
+    width: 660px;
+    margin-left: 6px;
+    line-height: 40px;
+}
+
+.timeline::before {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height:100%;
+    margin-left: -1px;
+    content: "";
+    background: rgba(255, 255, 255, 0.07);
+}
+
+@media only screen and (max-width : 767px) {
+    .timeline::before {
+        left: 40px;
+    }
+}
+
+.timeline-item {
+    padding: 40px 0;
+    opacity: 0.3;
+    filter: blur(2px);
+    transition: 0.5s;
+    box-sizing: border-box;
+    width: calc(70%-40px);
+    display: flex;
+    position: relative;
+    transform: translateY(-80px);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.timeline-item::before {
+    content: attr(data-text);
+    letter-spacing: 3px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    top: 70%;
+    margin-top: -5px;
+    padding-left: 15px;
+    opacity: 0;
+    right: calc(-100% - 16px);
+    left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    align-self: flex-end;
+}
+
+.timeline-item:nth-child(even)::before {
+    right: auto;
+    text-align: right;
+    left: calc(-37% - 11px);
+    padding-left: 0;
+    border-left: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    padding-right: 15px;
+}
+
+.timeline-item--active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+}
+
+.timeline-item--active::before {
+    top: 50%;
+    transition: 0.3s all 0.2s;
+    opacity: 1;
+}
+
+.timeline-item--active 
+.timeline__content-title {
+    margin: -30px 0 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline-item {
+        align-self: baseline !important;
+        width: 100%;
+        padding: 0 30px 150px 80px;
+    }
+    .timeline-item::before {
+        left: 10px !important;
+        padding: 0 !important;
+        top: 50px;
+        text-align: center !important;
+        width: 60px;
+        border: none !important;
+    }
+    .timeline-item:last-child {
+        padding-bottom: 40px;
+    }
+}
+
+.timeline__img {
+    max-width: 660px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-container {
+    max-width: 100%;
+    position: relative;
+    padding: 80px 0;
+    transition: 0.3s ease 0s;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-image: url("./assets/images/About/CW_Nov_2020.jpg");
+    overflow-x: clip;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(99, 99, 99, 0.8);
+}
+
+.timeline-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.timeline-header__title {
+    color: rgb(0, 254, 224);
+    font-size: 66px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: 46px;
+    margin: 0;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.timeline-header__subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+
+
+footer {
+    height: 55vh;
+    background-color: black;
+    width: 100%;
+    border-top: 2px solid rgba(0, 254, 224);
+    padding-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.footer-logo img {
+    height: 150px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.footer-contact {
+    padding-left: 200px;
+    margin-top: 80px;
+    float: left;
+}
+
+.footer-contact ul li {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-contact ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact ul li a:hover {
+    color: rgb(0, 254, 224);
+}
+
+.footer-social {
+    display: flex;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.linkedin {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-linkedin {
+    font-size: 30px;
+}
+
+.linkedin:hover {
+    width: 250px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.linkedin:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.linkedin span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.linkedin:hover span {opacity: 1;}
+
+.linkedin a {
+    color: black;
+    font-weight: bold;
+}
+
+.instagram {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-instagram {
+    font-size: 30px;
+}
+
+.instagram:hover {
+    width: 290px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.instagram:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.instagram span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.instagram:hover span {opacity: 1;}
+
+.instagram a {
+    color: black;
+    font-weight: bold;
+}
+
+.youtube {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 12px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-youtube {
+    font-size: 30px;
+}
+
+.youtube:hover {
+    width: 260px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.youtube:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.youtube span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.youtube:hover span {opacity: 1;}
+
+.youtube a {
+    color: black;
+    font-weight: bold;
+}
+
+.facebook {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 14px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-facebook {
+    font-size: 30px;
+}
+
+.facebook:hover {
+    width: 280px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.facebook:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.facebook span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.facebook:hover span {opacity: 1;}
+
+.facebook a {
+    color: black;
+    font-weight: bold;
+}
+
+.footer-mid {
+    background-color: rgb(0, 254, 224);
+    width: 90%;
+    height: 2px;
+    margin-left: 70px;
+    margin-top: 10px;
+    box-shadow: rgb(0, 254, 224);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 80px;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}

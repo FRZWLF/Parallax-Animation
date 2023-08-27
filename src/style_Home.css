@@ -1,0 +1,1838 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon+Milk&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Trebuchet MS';
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.lightblue {
+    color:rgb(0, 254, 224);
+}
+
+header.smaller {
+    height: 50px;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+}
+
+header img {
+    height: 100px;
+    width: 200px;
+    margin-left: -50px;
+}
+
+
+header img:hover{
+    cursor: pointer;
+}
+
+header ul {
+    display: inline-flex;
+    position: absolute;
+    right: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.buy-blue {
+    background-color: cyan;
+    color: white;
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    right: -120px;
+    font-size: large;
+}
+
+.warenkorb-icon {
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 91px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+i.fa-cart-shopping {
+    font-size: 25px;
+}
+
+.redcircle {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    top: -20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 2;
+    padding: 10px;
+}
+
+.redcircle p {
+    background: none;
+    color: white;
+    font-size: large;
+}
+
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+body {
+    font-family: "Montserrat", 'Trebuchet MS';
+    font-weight: normal;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 95px;
+    color: rgb(0, 254, 224);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+
+.intro-left1 {
+    position: absolute;
+    left: 20%;
+    top: 500px;
+    opacity: 1;
+    width: 60%;
+    color: white;
+    line-height: normal;
+    font-size: 30px;
+    transition: opacity 0.5s;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: 600;
+}
+
+.intro-left1.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.intro-left2 {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    opacity: 1;
+    width: 600px;
+    color: white;
+    line-height: normal;
+    font-size: 40px;
+    transition: opacity 0.5s;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: 600;
+}
+
+.intro-left2.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.intro-right1 {
+    position: absolute;
+    left: 7%;
+    top: 50px;
+    opacity: 1;
+    width: 60%;
+    color: white;
+    line-height: normal;
+    font-size: 30px;
+    transition: opacity 0.5s;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: 600;
+}
+
+.intro-right1.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.Hearable {
+    min-height: 500vh;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.Trainer-Connection {
+    width: 100%;
+    min-height: 75vh;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+.Trainer-Connection img {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+.Trainer-Connection h2 {
+    font-size: 20px;
+    margin-top: 0.5rem;
+    color: white;
+    margin-left: 42.3rem;
+    margin-right: 11rem;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.photo_hearable {
+    display: flex;
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+
+.photo_hearable img {
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 6.2rem;
+    width: auto;
+    height: 45vh;
+}
+
+.Impulse {
+    position: relative;
+    margin-left: -16rem;
+    margin-right: -4rem;
+    width: 80%;
+    height: 80%;
+    opacity: 0.6;
+}
+
+.horizontal-line1{
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.vertical-line {
+    width: 2px; /* Set the width of the line */
+    height: 75vh; /* Set the height to take up the full height of the container */
+    background-color: white; /* Set the color of the line */
+    margin-left: 4rem;
+    margin-right: 4rem;
+    opacity: 0.5;
+  }
+
+.horizontal-line2 {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 75vh;
+    margin-left: -8rem;
+    opacity: 0.5;
+}
+
+.text_hearable {
+    color: white;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    line-height: 1.2;
+}
+
+.Heartrate {
+    display: flex;
+    justify-content: left;
+}
+
+.vertical-line1 {
+    width: 2px; /* Set the width of the line */
+    height: 65vh; /* Set the height to take up the full height of the container */
+    background-color: white; /* Set the color of the line */
+    margin-left: 4rem;
+    margin-right: 4rem;
+    opacity: 0.5;
+    margin-top: -1.15rem;
+  }
+
+.text1_hearable {
+    color: white;
+    margin-right: 2rem;
+    margin-left: 4rem;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    line-height: 1.2;
+}
+
+.heartrate_hearable {
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+.heartrate_hearable img {
+    position: absolute;
+    margin-top: 4.5rem;
+    margin-left: 6rem;
+    width: auto;
+    height: 40vh;
+}
+
+.heartrate {
+    position: relative;
+    margin-left: -13rem;
+    margin-right: 1rem;
+    margin-top: -3.5rem;
+    width: 140%;
+    height: 120%;
+    opacity: 1;
+}
+
+.dark-container {
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 6.6rem;
+    height: 65vh;
+    width: 35vh;
+    background-color: black;
+}
+
+.horizontal-line3 {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 62.6vh;
+    opacity: 0.5;
+}
+
+.aufbau_hearable {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 2200px;
+    overflow: hidden;
+}
+
+.left1 {
+    position: absolute;
+    left: 80px;
+    top: 500px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.left1.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.left2 {
+    position: absolute;
+    left: 80px;
+    top: 1200px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.left2.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.right1 {
+    position: absolute;
+    left: 72%;
+    top: 800px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.right1.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.right2 {
+    position: absolute;
+    left: 72%;
+    top: 1600px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.right2.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.aufbau-container {
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+}
+
+.aufbau_hearable img {
+    width: 32vw;
+    height: auto;
+}
+
+.black {
+    position: absolute;
+    left: 34%;
+    top: 8rem;
+    transform: scale(1);
+    transition: transform 0.5s;
+    opacity: 0;
+}
+
+.blue {
+    position: absolute;
+    left: 34%;
+    top: 8rem;
+    transform: scale(1);
+    transition: transform 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.red {
+    position: absolute;
+    left: 34%;
+    top: 8rem;
+    transform: scale(1);
+    transition: transform 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.black.visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.blue.visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.red.visible {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.aufbau_hearable h2 {
+    font-size: 25px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 1);
+    font-weight: larger;
+    width: 660px;
+    line-height: 40px;
+}
+
+
+.tablet-show {
+    text-align: center;
+}
+
+.tablet-show h1 {
+    font-size: 60px;
+    color: rgb(0, 254, 224);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tablet-show_container {
+    display: flex;
+    justify-content: left;
+}
+
+.tablet-show_video video {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tablet-show_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.tablet-show_text h2 {
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 3%;
+    margin-bottom: 40px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.wearable {
+    height: 4000px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+.kurzvideo {
+    position: relative;
+}
+
+.kurzvideo video.fixate {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.überschrift-kurzvideo {
+    position: relative;
+    top: 0;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: rgb(0, 254, 224);
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.5s;
+    background-color: rgb(32, 31, 31, 0.9);
+    width: 760px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.überschrift-kurzvideo.invisible {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.text-kurzvideo1 {
+    position: absolute;
+    top: 1100px;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    z-index: 9;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 450px;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.text-kurzvideo1.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-kurzvideo2 {
+    position: absolute;
+    top: 1400px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    z-index: 8;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 430px;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.text-kurzvideo2.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-kurzvideo3 {
+    position: absolute;
+    top: 1400px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    z-index: 8;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 700px;
+    background-color: rgba(32, 31, 31, 0.9);
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.text-kurzvideo3.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.überschrift-weste {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: rgb(0, 254, 224);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.weste-anime {
+    position: relative;
+    height: auto;
+    width: 70%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.weste {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    height: 325vh;
+    text-align: center;
+}
+
+.weste-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    left: 15%;
+    margin-top: 20px;
+}
+
+.weste-text h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.weste-erklärung {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.weste-erklärung h1 {
+    font-size: 54px;
+    color: rgb(0, 254, 224);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.weste-erklärung img {
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.weste-erklärung video {
+    height: auto;
+    width: 55%;
+    margin-left: 22.5%;
+}
+
+.weste-erklärung h2 {
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+/*Animated Headline*/
+.weste-animation {
+    margin-top: 50px;
+    position: relative;
+}
+
+.animation-headline {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    margin-top: -60px;
+}
+
+.head-blue{
+    color: rgb(0, 254, 224);
+}
+.animation-headline.slide span {
+    display: inline-block;
+    padding: 0.2em 0;
+}
+.animation-headline.slide .animation-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+}
+.animation-headline.slide b {
+    opacity: 0;
+
+}
+.animation-headline.slide b.is-visible {
+    top: 0;
+    opacity: 1;
+    -webkit-animation: slide-in 0.6s;
+    -moz-animation: slide-in 0.6s;
+    animation: slide-in 0.6s;
+}
+.animation-headline.slide b.is-hidden {
+    -webkit-animation: slide-out 0.6s;
+    -moz-animation: slide-out 0.6s;
+    animation: slide-out 0.6s;
+}
+
+.animation-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.animation-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+.animation-words-wrapper b.is-visible {
+    position: relative;
+}
+.no-js .animation-words-wrapper b {
+    opacity: 0;
+}
+.no-js .animation-words-wrapper b.is-visible {
+    opacity: 1;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+}
+@-moz-keyframes slide-out {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -moz-transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(100%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(120%);
+    -moz-transform: translateY(120%);
+    -ms-transform: translateY(120%);
+    -o-transform: translateY(120%);
+    transform: translateY(120%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+.Demo {
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: black;
+}
+
+.containerD {
+    width: 100%;
+    margin-right: 4rem;
+    margin-left: 2rem;
+}
+
+.cardD {
+    margin-left: 2rem;
+    min-height: 30vh;
+    width: 100%;
+    height: 15rem;
+    background: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    padding-left: 3rem;
+    box-shadow: 0 30px 30px rgba(239, 233, 233, 0.2), 0px 0px 60px rgba(214, 208, 208, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.Test {
+    min-height: 20vh;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.Test img {
+    margin-left: 4rem;
+    margin-top: -0.5rem;
+    width: 11rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circleD {
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+    width: 9rem;
+    height: 9rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 254, 224, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+
+.infoD {
+    padding-left: 3.5rem;
+}
+
+.infoD h1 {
+    font-size: 1.5rem;
+    transform: translateZ(40px) scale(1);
+    transition: all 0.75s ease-out;
+}
+
+.infoD h3{
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.titleD {
+    transform: translateZ(40px);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Anfrage {
+    margin-top: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.Anfrage button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: white;
+    border: none;
+    color: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.Anfrage button:hover {
+    background: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 254, 224, 0.2);
+    color: white;
+}
+
+.container {
+    float: left;
+    margin-left: 2rem;
+    min-height: 10vh;
+    width: 20rem;
+    height: 30rem;
+}
+
+.Buy {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: black;
+}
+
+.sec {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background: black;
+}
+
+.sec h1 {
+    font-size: 80px;
+    color: rgb(0, 254, 224);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.card {
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+    background: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 30px 30px rgba(239, 233, 233, 0.2), 0px 0px 60px rgba(214, 208, 208, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.hearable {
+    min-height: 30vh;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hearable img {
+    margin-top: 2rem;
+    width: 10rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    margin-top: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 254, 224, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    transform: translateZ(40px) scale(1);
+    transition: all 0.75s ease-out;
+}
+
+.info h3{
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.title {
+    transform: translateZ(40px);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.sizes {
+    margin-top: 1rem;
+    position: relative;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button:hover {
+    background: #585858;
+    color: white;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.purchase button:hover {
+    background: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 254, 224, 0.2);
+    color: white;
+}
+
+.container1 {
+    float: left;
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+}
+
+.card1 {
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+    background: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 30px 30px rgba(239, 233, 233, 0.2), 0px 0px 60px rgba(214, 208, 208, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.weste1 {
+    min-height: 30vh;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weste1 img {
+    margin-top: 2rem;
+    width: 10rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle1 {
+    margin-top: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 254, 224, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+
+.info1 h1 {
+    font-size: 1.5rem;
+    transform: translateZ(40px) scale(1);
+    transition: all 0.75s ease-out;
+}
+
+.info1 h3{
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.title1 {
+    transform: translateZ(40px);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.sizes1 {
+    margin-top: 1rem;
+    position: relative;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes1 button {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button:hover {
+    background: #585858;
+    color: white;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.purchase1 {
+    margin-top: 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase1 button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: white;
+    border: none;
+    color: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.purchase1 button:hover {
+    background: rgba(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 254, 224, 0.2);
+    color: white;
+}
+
+.container2 {
+    float: left;
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+}
+
+.card2 {
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+    background: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 30px 30px rgba(239, 233, 233, 0.2), 0px 0px 60px rgba(214, 208, 208, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.wearable1 {
+    min-height: 30vh;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wearable1 img {
+    margin-top: 2rem;
+    width: 12rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle2 {
+    margin-top: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 254, 224, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+
+.info2 h1 {
+    font-size: 1.5rem;
+    transform: translateZ(40px) scale(1);
+    transition: all 0.75s ease-out;
+}
+
+.info2 h3{
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.title2 {
+    transform: translateZ(40px);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.sizes2 {
+    margin-top: 1rem;
+    position: relative;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes2 button {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button:hover {
+    background: #585858;
+    color: white;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.purchase2 {
+    margin-top: 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase2 button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: white;
+    border: none;
+    color: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.purchase2 button:hover {
+    background: rgba(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 254, 224, 0.2);
+    color: white;
+}
+
+.container3 {
+    float: left;
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+}
+
+.card3 {
+    margin-left: 2rem;
+    min-height: 40vh;
+    width: 20rem;
+    height: 30rem;
+    background: white;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+    box-shadow: 0 30px 30px rgba(239, 233, 233, 0.2), 0px 0px 60px rgba(214, 208, 208, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.pullover {
+    min-height: 30vh;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pullover img {
+    margin-top: 2rem;
+    width: 10rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle3 {
+    margin-top: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 254, 224, 0.75),
+        rgba(0, 0, 0, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+
+.info3 h1 {
+    font-size: 1.5rem;
+    transform: translateZ(40px) scale(1);
+    transition: all 0.75s ease-out;
+}
+
+.info3 h3{
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.title3 {
+    transform: translateZ(40px);
+    font-family: "Lemon Milk", 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.sizes3 {
+    margin-top: 1rem;
+    position: relative;
+    transform: translateZ(40px) scale(1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes3 button {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button:hover {
+    background: #585858;
+    color: white;
+}
+
+button.active{
+    background: #585858;
+    color: white;
+}
+
+.purchase3 {
+    margin-top: 1rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase3 button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: white;
+    border: none;
+    color: rgb(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.purchase3 button:hover {
+    background: rgba(0, 254, 224);
+    box-shadow: 0px 5px 10px rgba(0, 254, 224, 0.2);
+    color: white;
+}
+
+.leer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+footer {
+    height: 55vh;
+    background-color: black;
+    width: 100%;
+    border-top: 2px solid rgba(0, 254, 224);
+    padding-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.footer-logo img {
+    height: 150px;
+    width: auto;
+    margin-left: 100px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.footer-contact {
+    padding-left: 200px;
+    margin-top: 80px;
+    float: left;
+}
+
+.footer-contact ul li {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-contact ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact ul li a:hover {
+    color: rgb(0, 254, 224);
+}
+
+.footer-social {
+    display: flex;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.linkedin {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-linkedin {
+    font-size: 30px;
+}
+
+.linkedin:hover {
+    width: 250px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.linkedin:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.linkedin span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.linkedin:hover span {opacity: 1;}
+
+.linkedin a {
+    color: black;
+    font-weight: bold;
+}
+
+.instagram {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 15px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-instagram {
+    font-size: 30px;
+}
+
+.instagram:hover {
+    width: 290px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.instagram:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.instagram span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 1s linear 0.5s;
+}
+
+.instagram:hover span {opacity: 1;}
+
+.instagram a {
+    color: black;
+    font-weight: bold;
+}
+
+.youtube {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 11px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-youtube {
+    font-size: 30px;
+}
+
+.youtube:hover {
+    width: 260px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.youtube:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.youtube span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 0.5s linear 0.25s;
+}
+
+.youtube:hover span {opacity: 1;}
+
+.youtube a {
+    color: black;
+    font-weight: bold;
+}
+
+.facebook {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 13px;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+    box-sizing: padding-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: left;
+}
+
+i.fa-facebook {
+    font-size: 30px;
+}
+
+.facebook:hover {
+    width: 280px;
+    background: white;
+    color: rgb(0, 254, 224);
+    cursor: pointer;
+}
+
+.facebook:hover a {
+    color: rgb(0, 254, 224);
+}
+
+.facebook span {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    transition: opacity 0.5s linear 0.25s;
+}
+
+.facebook:hover span {opacity: 1;}
+
+.facebook a {
+    color: black;
+    font-weight: bold;
+}
+
+.footer-mid {
+    background-color: rgb(0, 254, 224);
+    width: 90%;
+    height: 2px;
+    margin-left: 70px;
+    margin-top: 10px;
+    box-shadow: rgb(0, 254, 224);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 80px;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
